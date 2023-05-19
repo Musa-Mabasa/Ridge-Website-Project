@@ -4,6 +4,7 @@ nav{
     justify-content: space-between;
     background-color: #0F0D0D;
     padding: 20px 30px;
+    height: 15%;
 }
 
 #navbar-nav{
@@ -18,21 +19,37 @@ nav{
     position: relative;
 }
 
-#navbar-nav li a{
+#navbar-nav a{
     text-decoration: none;
     font-size: 1.5rem;
     color: #fff;
     transition: 0.2s ease-in-out;
 }
 
-#navbar-nav li a:hover,
-#navbar-nav li a:active{
+#navbar-nav .nav-item {
+    height: 60%;
+}
+
+#navbar-nav .nav-item  a:hover{
     color: #2FEB00;
 }
 
+#navbar-nav .nav-item a.active{
+    color: #2FEB00;
+}
 
-#navbar-nav li a:hover::after,
-#navbar-nav li a:active::after{
+#navbar-nav .nav-item a.active::after{
+    content: "";
+    width: 60%;
+    height: 2px;
+    background-color: #2FEB00;
+    position: absolute;
+    bottom: -5px;
+    left: 20%;
+    transition: 0.2s ease-in-out;
+}
+
+#navbar-nav li a:hover::after{
     content: "";
     width: 60%;
     height: 2px;
@@ -43,11 +60,15 @@ nav{
 
 }
 
-#mobile{
+#menu{
     display: none;
 }
 
-#mobile .menu-Icon{
+#close{
+    display: none;
+}
+
+#menu #bar{
     color: #fff;
     align-items: center;
 }
@@ -57,15 +78,14 @@ nav{
         display: flex;
         align-items: flex-start;
         flex-direction: column;
-        justify-content: flex-start;
+        justify-content: center;
+        align-items: center;
         position: fixed;
-        top: 90px;
-        right:-300px;
-        width: 300px;
-        height: 100vh;
-        background: #0F0D0D;
+        right:-100%;
+        width: 100%;
+        height: 100%;
+        background-color: #0F0D0D;
         box-shadow: 0 40px 40px;
-        padding: 20px 0 0 20px;
         transition: 0.3s ease-in-out;
     }
 
@@ -73,28 +93,50 @@ nav{
         right: 0px;
     }
 
+    #navbar-nav .nav-item {
+        height: 5%;
+    }
+
     #navbar-nav li{
         margin-bottom: 30px;
     }
 
-    #navbar-nav li a:hover,
-    #navbar-nav li a.active{
-        color: #2FEB00;
+    #navbar-nav li a:hover::after{
+        width: 0;
+    
     }
 
-    #navbar-nav li a:hover::after,
-    #navbar-nav li a.active::after{
-        background-color: #2FEB00;
-        position: absolute;
-
+    #navbar-nav .nav-item a.active::after{
+        width: 0;
     }
 
-    #mobile{
+    #menu{
         display: block;
+        height: 100%;
+        top: 1rem;
+        right: 2rem;
     }
 
-    #mobile .menu-Icon{
+    #menu .menu-Icon{
         font-size: 25px;
         cursor: pointer;
+        height: 100%;
+        color: #fff;
+    }
+
+    #close{
+        display: block;
+        height: 2%;
+        top: 0.1rem;
+        right: 2rem;
+    }
+
+    #close .menu-Icon{
+        font-size: 25px;
+        cursor: pointer;
+        height: 10%;
+        color: #fff;
+        position: absolute;
     }
 }
+  
