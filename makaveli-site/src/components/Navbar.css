@@ -5,6 +5,11 @@ nav{
     background-color: #0F0D0D;
     padding: 20px 30px;
     height: 15%;
+    padding-top: 0;
+}
+
+.black-nav{
+    background-color: #1C1919;
 }
 
 #navbar-nav{
@@ -44,7 +49,7 @@ nav{
     height: 2px;
     background-color: #2FEB00;
     position: absolute;
-    bottom: -5px;
+    bottom: -1px;
     left: 20%;
     transition: 0.2s ease-in-out;
 }
@@ -55,7 +60,7 @@ nav{
     height: 2px;
     background-color: #2FEB00;
     position: absolute;
-    bottom: -5px;
+    bottom: -1px;
     left: 20%;
 
 }
@@ -76,7 +81,6 @@ nav{
 @media screen and (max-width: 768px){
     #navbar-nav{
         display: flex;
-        align-items: flex-start;
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -85,8 +89,8 @@ nav{
         width: 100%;
         height: 100%;
         background-color: #0F0D0D;
-        box-shadow: 0 40px 40px;
         transition: 0.3s ease-in-out;
+        z-index: 2;
     }
 
     #navbar-nav.active{

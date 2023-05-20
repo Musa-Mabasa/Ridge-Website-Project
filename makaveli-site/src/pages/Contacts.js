@@ -8,8 +8,8 @@ function Contacts() {
   return (
     <div id='wrapper'>
     <div className='contact-header'>
-      <h1>Get in touch with me for any</h1>
-      <h1>further Information.</h1>
+      <h1 className='header-content'>Get in touch with me for any</h1>
+      <h1 className='header-content'>further Information.</h1>
     </div>
       <div className='contact-box-list'>
       <div className='contact-box'>
