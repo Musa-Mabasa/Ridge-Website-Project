@@ -44,7 +44,7 @@ nav{
 }
 
 #navbar-nav .nav-item {
-    height: 60%;
+    height: 30px;
 }
 
 #navbar-nav .nav-item  a:hover{

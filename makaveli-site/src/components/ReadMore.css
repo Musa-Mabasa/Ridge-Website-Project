@@ -1,0 +1,10 @@
+.text-button{
+    height: 10px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: skyblue;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}

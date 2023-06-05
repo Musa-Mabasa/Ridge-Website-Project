@@ -1,5 +1,5 @@
 .wrapper{
-    height: 100%;
+    height: 100vh;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -8,20 +8,13 @@
 }
 
 .book-list{
-    height: 80%;
-    width: 80%;
+    height: 800px;
+    width: 850px;
 }
 
 .book-header{
     height: 30px; ;
 }
 
-.book{
-    height: 100%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
+
 
