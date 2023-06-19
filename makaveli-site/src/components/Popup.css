@@ -22,8 +22,9 @@
 }
 
 .popup-inner{
-    display: relative;
+    display: flex;
     flex-direction: column;
+    justify-content: center;
     position: relative;
     padding: 40px;
     width: 100%;
@@ -41,7 +42,8 @@
 }
 
 #popup-icon{
-    font-size: 30px;
+    font-size: 50px;
     color: white;
-    font-weight: bold;
+    font-weight:bolder;
+
 }

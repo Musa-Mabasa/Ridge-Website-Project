@@ -6,8 +6,10 @@ import { IconContext } from 'react-icons/lib'
 function Music() {
   return (
    <div className='wrapper'>
+    <div className='overlay'>
+    </div>
     <div className='title'>
-        <h2>Stream my Music here</h2>
+        <h2 >Stream my Music here</h2>
       </div>
       <div className='accordain'>
         {data.map((item, index) => (

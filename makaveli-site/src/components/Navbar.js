@@ -18,10 +18,10 @@ class Navbar extends Component  {
     render(){
         const path = window.location.pathname
         return (
-            <>
-              <nav className={path === '/contacts'? 'black-nav':''}>
+              <nav className={path==='/'? 'home-nav':''}>
                 <Link id='logo' to='/'>
-                    <img src={logo} alt="logo" />
+                    <h2>RIDGE</h2>
+                    <h2>MAKAVELI</h2>
                 </Link>
                 <div>
                     <ul id="navbar-nav" className={this.state.clicked? "#navbar active" : "#navbar" }>
@@ -53,7 +53,6 @@ class Navbar extends Component  {
                     
                 </div>
               </nav>
-            </>
           )
     }
   

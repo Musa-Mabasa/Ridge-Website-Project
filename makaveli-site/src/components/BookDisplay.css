@@ -49,8 +49,6 @@
 }
 
 .book-description{
-    position: relative;
-    z-index: 1;
     text-align: start; /* Adjust the text alignment as needed */
     color: #fff; /* Set the color of the text */
     padding: 20px 0px; 
