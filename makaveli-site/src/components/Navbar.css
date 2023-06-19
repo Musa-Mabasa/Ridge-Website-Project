@@ -49,18 +49,18 @@ nav{
 }
 
 #navbar-nav .nav-item  a:hover{
-    color: #2FEB00;
+    color: #007f2a;
 }
 
 #navbar-nav .nav-item a.active{
-    color: #2FEB00;
+    color: #007f2a;
 }
 
 #navbar-nav .nav-item a.active::after{
     content: "";
     width: 60%;
     height: 2px;
-    background-color: #2FEB00;
+    background-color: #007f2a;
     position: absolute;
     bottom: -1px;
     left: 20%;
@@ -71,7 +71,7 @@ nav{
     content: "";
     width: 60%;
     height: 2px;
-    background-color: #2FEB00;
+    background-color: #007f2a;
     position: absolute;
     bottom: -1px;
     left: 20%;
