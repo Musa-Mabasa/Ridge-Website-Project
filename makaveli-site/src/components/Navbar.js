@@ -2,10 +2,8 @@ import React, { Component } from 'react'
 import './Navbar.css'
 import * as AiIcons from 'react-icons/ai'
 import {Link, NavLink} from 'react-router-dom'
-import logo from '../assets/Logo.png'
 
 class Navbar extends Component  {
-    // take in passed in props
 
 
     state = {clicked: false}
@@ -13,18 +11,17 @@ class Navbar extends Component  {
         this.setState({clicked: !this.state.clicked})
     }
 
-    
-
     render(){
-        const path = window.location.pathname
+        const path = window.location.pathname;
+        const isHomePage = path === '/'
         return (
-              <nav className={path==='/'? 'home-nav':''}>
+              <nav>
                 <Link id='logo' to='/'>
-                    <h2>RIDGE</h2>
-                    <h2>MAKAVELI</h2>
+                    <h3>RIDGE</h3>
+                    <h3>MAKAVELI</h3>
                 </Link>
                 <div>
-                    <ul id="navbar-nav" className={this.state.clicked? "#navbar active" : "#navbar" }>
+                    <ul id="navbar-nav" className={`${this.state.clicked? "#navbar active" : "#navbar" } ${isHomePage?  'hide' : ''}`}>
                         <div id= "close" onClick={this.handleClick}>
                             <AiIcons.AiOutlineClose id="close" className="menu-Icon"></AiIcons.AiOutlineClose>
                         </div>

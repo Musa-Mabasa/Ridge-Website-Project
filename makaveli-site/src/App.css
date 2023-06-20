@@ -11,6 +11,15 @@ body,
   margin: 0;
   text-align: center;
   text-decoration-color: #fff;
+  height: 100%;
+}
+
+#MusicWrapper {
+  z-index: -1;
+}
+
+nav{
+  z-index: 1
 }
 
 

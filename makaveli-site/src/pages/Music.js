@@ -1,11 +1,12 @@
 import React from 'react'
 import './Music.css'
+import '../App.css'
 import * as slicons from 'react-icons/sl'
 import { IconContext } from 'react-icons/lib'
 
 function Music() {
   return (
-   <div className='wrapper'>
+   <div id='MusicWrapper'>
     <div className='overlay'>
     </div>
     <div className='title'>

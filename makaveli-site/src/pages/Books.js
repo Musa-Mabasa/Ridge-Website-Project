@@ -1,12 +1,13 @@
 import React from 'react'
 import './Books.css'
+import '../App.css'
 import BookDisplay from '../components/BookDisplay'
 import Princples from '../assets/bookCovers/Principles.jpg'
 import Transformation from '../assets/bookCovers/Transformation.jpg'
 
 function Books() {
   return (
-    <div className='wrapper'>
+    <div id='BookWrapper'>
       <div className='book-header'>
         <h1 className='header-content'>Books</h1>
       </div>
