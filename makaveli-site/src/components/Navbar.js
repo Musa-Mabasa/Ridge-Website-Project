@@ -11,34 +11,35 @@ class Navbar extends Component  {
         this.setState({clicked: !this.state.clicked})
     }
 
+    hidden = this.props.hidden
+
     render(){
-        const path = window.location.pathname;
-        const isHomePage = path === '/'
+        const hidden = this.props.hidden
         return (
-              <nav>
+              <nav id='nav'>
                 <Link id='logo' to='/'>
                     <h3>RIDGE</h3>
                     <h3>MAKAVELI</h3>
                 </Link>
-                <div>
-                    <ul id="navbar-nav" className={`${this.state.clicked? "#navbar active" : "#navbar" } ${isHomePage?  'hide' : ''}`}>
+                <div id='nav-list'>
+                    <ul id={hidden? 'homeNav-nav': "navbar-nav"} className={this.state.clicked? "#navbar active" : "#navbar" }>
                         <div id= "close" onClick={this.handleClick}>
                             <AiIcons.AiOutlineClose id="close" className="menu-Icon"></AiIcons.AiOutlineClose>
                         </div>
                         <li className="nav-item" onClick={this.handleClick}>
-                            <NavLink to="/" activeclassname="active" >Home</NavLink>
+                            <NavLink to="/" activeclassname="active" >HOME</NavLink>
                         </li>
                         <li className="nav-item" onClick={this.handleClick}>
-                            <NavLink to="/music" activeclassname="active" >Music</NavLink>
+                            <NavLink to="/music" activeclassname="active" >MUSIC</NavLink>
                         </li>
                         <li className="nav-item" onClick={this.handleClick}>
-                            <NavLink to="/books" activeclassname="active" >Books</NavLink>
+                            <NavLink to="/books" activeclassname="active" >BOOKS</NavLink>
                         </li>
                         <li className="nav-item" onClick={this.handleClick}>
-                            <NavLink to="/about" activeclassname="active" >About</NavLink>
+                            <NavLink to="/about" activeclassname="active" >ABOUT</NavLink>
                         </li>
                         <li className="nav-item" onClick={this.handleClick}>
-                            <NavLink to="/contacts" activeclassname="active" >Contact</NavLink>
+                            <NavLink to="/contacts" activeclassname="active" >CONTACT</NavLink>
                         </li>
                     </ul>
                 </div>

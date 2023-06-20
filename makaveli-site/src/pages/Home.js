@@ -10,14 +10,16 @@ class Home extends React.Component {
   state = {clicked: false}
     handleClick = () => {
         this.setState({clicked: !this.state.clicked})
+        
     }
 
   render(){
     return (
       <div className='background-video'>
+          <div className='overlay'></div>
           <video src={backgroundvideo} autoPlay loop muted/>
           <nav id="homeNav">
-          <div>
+          <div id='home-nav-list'>
             <ul id="home-navbar-nav" className={this.state.clicked? "home-navbar active" : "home-navbar" }>
                 <li className="home-nav-item" onClick={this.handleClick}>
                     <NavLink to="/" activeclassname="active" >Home</NavLink>

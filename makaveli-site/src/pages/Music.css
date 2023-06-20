@@ -17,15 +17,15 @@ svg{
     background-color: #1C1919;
 }
 
-.overlay{
+#music-overlay{
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    z-index: -1;
-}
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+  }
 
 .title{
     color: #fff;
@@ -33,6 +33,7 @@ svg{
     height: 20%;
     background-color: transparent;
     opacity: 1;
+    z-index: 1;
 }
 
 .title h2{
@@ -47,6 +48,8 @@ svg{
     justify-content: center;
     align-items: center;
     background-color: transparent;
+    z-index: 1;
+
 }
 
 .accordain-item{

@@ -3,11 +3,12 @@ import './Music.css'
 import '../App.css'
 import * as slicons from 'react-icons/sl'
 import { IconContext } from 'react-icons/lib'
+import Navbar from '../components/Navbar'
 
 function Music() {
   return (
    <div id='MusicWrapper'>
-    <div className='overlay'>
+    <div id='music-overlay'>
     </div>
     <div className='title'>
         <h2 >Stream my Music here</h2>

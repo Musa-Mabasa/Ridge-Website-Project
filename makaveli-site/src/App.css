@@ -14,12 +14,6 @@ body,
   height: 100%;
 }
 
-#MusicWrapper {
-  z-index: -1;
-}
 
-nav{
-  z-index: 1
-}
 
 

@@ -11,12 +11,11 @@ video {
   object-fit: cover;
   width: 100%;
   height: 100%;
-  z-index: 1;
   background-color: transparent;
 }
 
 #homeNav{
-  position: absolute;
+  position: fixed;
   height: 40px;
   width: 100%;
   display: flex;
@@ -24,8 +23,12 @@ video {
   justify-content: center;
   align-self: center;
   padding: 20px 30px;
-  z-index: 3;
+  background-color: transparent;
   
+}
+
+#home-nav-list{
+  background-color: transparent;
 }
 
 nav ul{
@@ -73,3 +76,11 @@ nav ul{
   }
 }
 
+.overlay{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+}
