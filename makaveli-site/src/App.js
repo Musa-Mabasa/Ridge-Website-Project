@@ -13,10 +13,12 @@ function App() {
   const location = useLocation();
   const { pathname } = location;
   const shouldHide = pathname === '/';
+  const inBooks = pathname === '/books';
+  const inMusic = pathname === '/music';
   return (
     <>
     <div className="App">
-    <Navbar className="navbar" hidden = {shouldHide}/>
+    <Navbar className="navbar" hidden = {shouldHide} inBooks = {inBooks} inMusic= {inMusic}/>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/music" element={<Music />} />

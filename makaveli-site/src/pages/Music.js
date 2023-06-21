@@ -3,7 +3,6 @@ import './Music.css'
 import '../App.css'
 import * as slicons from 'react-icons/sl'
 import { IconContext } from 'react-icons/lib'
-import Navbar from '../components/Navbar'
 
 function Music() {
   return (

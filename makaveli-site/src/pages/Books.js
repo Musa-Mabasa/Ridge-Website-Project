@@ -8,8 +8,9 @@ import Transformation from '../assets/bookCovers/Transformation.jpg'
 function Books() {
   return (
     <div id='BookWrapper'>
+      <div id='book-overlay'></div>
       <div className='book-header'>
-        <h1 className='header-content'>Books</h1>
+        <p className='header-content'>BOOKS</p>
       </div>
       <div className="book-list">
         {data.map((item, index) => (

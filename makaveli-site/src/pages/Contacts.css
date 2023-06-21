@@ -1,6 +1,7 @@
 #wrapper{
-    width: 70%;
-    height: 100vh;
+    position: absolute;
+    width: 60%;
+    height: auto;
     display: flex;
     flex-direction: column;
     padding: 0 50px;
@@ -9,6 +10,7 @@
     align-self: center;
     margin: 0px;
     margin-left: 20%;
+    margin-top: 100px;
 }
 
 .contact-header{
@@ -117,6 +119,7 @@
 @media screen and (max-width: 700px){
     #wrapper{
         margin: 0;
+        margin-top: 100px;
         
     }
 

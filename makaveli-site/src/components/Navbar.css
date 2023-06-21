@@ -10,8 +10,21 @@
     margin: 0;
     width: 100%;
     z-index: 100;
+    top: 0;
+    
 }
 
+/* .nav-class{
+    transform: translateY(0);
+} */
+
+.hidden-nav{
+    transform: translateY(-100%);
+}
+
+#hidden-nav{
+    transform: (-100%);
+}
 
 #logo{
     background-color: transparent;

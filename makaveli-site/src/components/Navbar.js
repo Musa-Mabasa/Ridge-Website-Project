@@ -12,11 +12,42 @@ class Navbar extends Component  {
     }
 
     hidden = this.props.hidden
+    
+        constructor(props){
+            super(props)
+            this.state = {
+                prevScrollPos: window.scrollY,
+                show: true
+            }
+        }
+        
+        handleScroll = () => {
+            const { prevScrollPos } = this.state;
+            const currentScrollPos = window.scrollY;
+            const show = prevScrollPos > currentScrollPos;
+        
+            this.setState({
+              prevScrollPos: currentScrollPos,
+              show
+            });
+          };
+
+        componentDidMount() {
+        window.addEventListener('scroll', this.handleScroll);
+        }
+    
+        componentWillUnmount() {
+        window.removeEventListener('scroll', this.handleScroll);
+        }
 
     render(){
+        const {show} = this.state
+        console.log(show)
         const hidden = this.props.hidden
+        const inBooks = this.props.inBooks
+        const inMusic = this.props.inMusic
         return (
-              <nav id='nav'>
+                <nav id='nav' className={(inBooks || inMusic) ? show? 'nav-class':'hidden-nav': ''}>
                 <Link id='logo' to='/'>
                     <h3>RIDGE</h3>
                     <h3>MAKAVELI</h3>
@@ -50,7 +81,7 @@ class Navbar extends Component  {
                     }
                     
                 </div>
-              </nav>
+            </nav>
           )
     }
   
