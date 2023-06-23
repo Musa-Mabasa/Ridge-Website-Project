@@ -6,26 +6,27 @@
     align-items: center;
     justify-content: center;
     background-image: url('../assets/bookBackground.JPG');
-    background-size: 100% auto;
-    background-position: bottom;
+    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
     overflow-y: scroll;
     scroll-behavior: smooth;
 }
 
 .book-list{
-    height: 500px;
+    height: 100%;
     width: 850px;
     margin-top: 10px;
-    margin-bottom: 100px;
+    margin-bottom: 200px;
     background-color: transparent;
     z-index: 1;
     padding: 0;
+    padding-bottom: 50px ;
 }
 
 .book-header{
     height: 30px;
-    margin-top: 300px;
+    margin-top: 500px;
     z-index: 2;
     color: #fff;
     background-color: transparent;
@@ -37,8 +38,6 @@
     font-weight: 500;
 }
 
-
-
 #book-overlay{
     position: absolute;
     top: 0;
@@ -49,5 +48,16 @@
     z-index: 1;
 }
 
+@media screen and (max-width: 855px){
+    .book-list{
+        width: 90%;
+    }
+}
+
+@media screen and (min-width: 1000px){
+    #BookWrapper{
+        background-position: bottom;
+    }
+}
 
 

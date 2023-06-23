@@ -24,11 +24,13 @@
 
 .book-title{
     height: 50px;
-    font-size: 30px;
+    font-size: 20px;
     font-weight: bold;
     margin: 0;
     color: white;
     text-decoration: underline;
+    text-align: start;
+
 }
 
 .book-published{
@@ -45,20 +47,20 @@
 #published-separator{
     border: none; 
     height: 20px;
-    background: linear-gradient(to right, #000, #fff, #000);
+    background: linear-gradient(to bottom, #000, #fff, #000);
     width: 2px;
 }
 
 .book-description{
     text-align: start; /* Adjust the text alignment as needed */
     color: #fff; /* Set the color of the text */
-    padding: 20px 0px; 
+    /* padding: 20px 0px;  */
     height: 55px;
 }
 
 .book-links{
     display: flex;
-    height: 40px;
+    height: 20px;
     width: 100%;
     margin-top: 40px;
     margin-bottom: 20px;
@@ -75,6 +77,7 @@
     background-color: transparent;
     outline: none;
 }
+
 
 .shop-img:hover{
     transform: scale(1.1);
@@ -122,5 +125,49 @@
     border-width: 2px;
     border-style: solid;
     border-color: gray;
+}
+
+@media screen and (max-width: 855px){
+   
+    .book-content{
+        width: 57%;
+    }
+
+    .book-title{
+        font-size: 18px;
+        height: 70px;
+        word-spacing: 2px;
+    }
+
+    .book-published{
+        margin-top: 10px;
+        font-size: 10px;
+        gap: 4px
+    }
+
+    .book-description{
+        height: 70px;
+        font-size: 15px;
+    }
+
+    .book .book-image{
+        height: 55%;
+        align-self: flex-start;
+        margin-right: 10%;
+        margin-top: 20px;
+    }
+
+    #content-separator{
+        display: none;
+    }
+
+    .book-links{
+        width: 100%;
+    }
+    
+    .shop-img{
+        height: 20px;
+    }
+
 }
 

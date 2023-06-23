@@ -27,7 +27,7 @@ export default Books
 const data = [
   {
     id: 1,
-    title: 'Book 1',
+    title: 'Principles of Nature: An engineer\'s analysis and observations of nature',
     description: 'Beyond the curtain presented to people in modern times is the natural arena that has allowed organic life to thrive. Although society is bombarded with modern ideas Beyond the curtain presented to people in modern times is the natural arena that has allowed organic life to thrive. Although society is bombarded with modern ideas Beyond the curtain presented to people in modern times is the natural arena that has allowed organic life to thrive. Although society is bombarded with modern ideas Beyond the curtain presented to people in modern times is the natural arena that has allowed organic life to thrive. Although society is bombarded with modern ideas Beyond the curtain presented to people in modern times is the natural arena that has allowed organic life to thrive. Although society is bombarded with modern ideas',
     image: Princples,
     amazonLink: 'https://www.amazon.com/Principles-Nature-engineers-analysis-observations-ebook/dp/B0BGSVTDHS/ref=sr_1_2?crid=1DZ8E3EOG6YYO&keywords=ridge+makavelli+transformation&qid=1679768817&sprefix=Ridge+maka%2Caps%2C447&sr=8-2',

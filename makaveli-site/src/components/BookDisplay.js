@@ -27,7 +27,7 @@ function BookDisplay({title, description, image, amazonLink, takealotlink, smash
                 </div>
             </div>
             <div className='book-description'>
-             <ReadMore onClick={() => setButtonPopup(true)} text={description} maxlength={180}></ReadMore>
+             <ReadMore onClick={() => setButtonPopup(true)} text={description} maxlength={100}></ReadMore>
              <Popup trigger={buttonPopup} setTrigger= {setButtonPopup}>
                 <h3 style={{height: '350px'}}>{description}</h3>
              </Popup>
