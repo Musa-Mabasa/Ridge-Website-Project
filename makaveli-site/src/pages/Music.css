@@ -54,7 +54,7 @@ svg{
 
 .accordain-item{
     display: flex;
-    height: 22%;
+    height: 30px;
     margin: 0 20%;
     background-color: #1C1919;
     border-radius: 5px;
@@ -66,6 +66,7 @@ svg{
 .site-content{
     display: flex;
     background-color: #1C1919;
+    align-items: center;
 
 }
 
@@ -94,7 +95,6 @@ a{
 @media screen and (max-width: 768px){
     .accordain-item{
         display: flex;
-        height: 22%;
         margin: 0 10%;
         background-color: #1C1919;
         border-radius: 8px;

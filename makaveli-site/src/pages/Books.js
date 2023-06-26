@@ -5,9 +5,9 @@ import BookDisplay from '../components/BookDisplay'
 import Princples from '../assets/bookCovers/Principles.jpg'
 import Transformation from '../assets/bookCovers/Transformation.jpg'
 
-function Books() {
+function Books({handleScroll, bookWrapperRef}) {
   return (
-    <div id='BookWrapper'>
+    <div id='BookWrapper' ref={bookWrapperRef} onScroll={handleScroll}>
       <div id='book-overlay'></div>
       <div className='book-header'>
         <p className='header-content'>BOOKS</p>

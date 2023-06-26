@@ -32,6 +32,12 @@
     max-width: 800px;
     word-spacing: 2px;
     line-height: 1.4;
+    background-color: transparent;
+    z-index: 101;
+}
+
+.popup-inner h3{
+    background-color: transparent;
 }
 
 #close-popup{
@@ -40,6 +46,11 @@
     position: fixed;
     top: 20px;
     right: 20px;
+    background-color: transparent;
+}
+
+#close-popup svg{
+    background-color: transparent;
 }
 
 #popup-icon{

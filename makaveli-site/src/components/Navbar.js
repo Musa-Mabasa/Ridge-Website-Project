@@ -6,48 +6,28 @@ import {Link, NavLink} from 'react-router-dom'
 class Navbar extends Component  {
 
 
-    state = {clicked: false}
+    state = {
+        clicked: false,
+        showNavbar: true,
+      };
     handleClick = () => {
         this.setState({clicked: !this.state.clicked})
     }
 
     hidden = this.props.hidden
-    
-        constructor(props){
-            super(props)
-            this.state = {
-                prevScrollPos: window.scrollY,
-                show: true
-            }
-        }
-        
-        handleScroll = () => {
-            const { prevScrollPos } = this.state;
-            const currentScrollPos = window.scrollY;
-            const show = prevScrollPos > currentScrollPos;
-        
-            this.setState({
-              prevScrollPos: currentScrollPos,
-              show
-            });
-          };
 
-        componentDidMount() {
-        window.addEventListener('scroll', this.handleScroll);
+    componentDidUpdate(prevProps) {
+        if (prevProps.showNavbar !== this.props.showNavbar) {
+          this.setState({ showNavBar: this.props.showNavBar });
         }
+      }
     
-        componentWillUnmount() {
-        window.removeEventListener('scroll', this.handleScroll);
-        }
-
     render(){
-        const {show} = this.state
-        console.log(show)
         const hidden = this.props.hidden
         const inBooks = this.props.inBooks
         const inMusic = this.props.inMusic
         return (
-                <nav id='nav' className={(inBooks || inMusic) ? show? 'nav-class':'hidden-nav': ''}>
+                <nav id='nav' className={(inBooks || inMusic) ? this.props.showNavbar ? 'nav-class' : 'hidden-nav' : ''}>
                 <Link id='logo' to='/'>
                     <h3>RIDGE</h3>
                     <h3>MAKAVELI</h3>
