@@ -24,7 +24,7 @@ function App() {
     const windowHeight = window.innerHeight;
     const wrapperHeight = bookWrapper.scrollHeight;
     const scrollTop = bookWrapper.scrollTop;
-    if (wrapperHeight > windowHeight && scrollTop > 0) {
+    if (wrapperHeight > windowHeight && scrollTop > 60) {
       setShowNavbar(false);
     } else {
       setShowNavbar(true);

@@ -7,10 +7,11 @@ function ReadMore({text, maxlength, onClick}) {
     <div className='text'>
         <p>
             {text.slice(0, maxlength)}
-        </p>
-        <button onClick={onClick} className='text-button'>
+            <button onClick={onClick} className='text-button' style={{'font-size':'15px'}}>
             ...read More
-        </button>
+            </button>
+        </p>
+  
     </div>
   )
 }
