@@ -14,7 +14,7 @@ function BookDisplay({title, description, image, amazonLink, takealotlink, smash
 
     useEffect(() => {
         const handleResize = () => {
-          setIsSmallScreen(window.innerWidth <= 600); // Adjust the screen width breakpoint as needed
+          setIsSmallScreen(window.innerWidth <= 750); // Adjust the screen width breakpoint as needed
         };
     
         handleResize(); // Check initial screen width
@@ -22,7 +22,7 @@ function BookDisplay({title, description, image, amazonLink, takealotlink, smash
         return () => window.removeEventListener('resize', handleResize);
       }, []);
     
-      const maxLength = isSmallScreen ? 50 : 100; // Change maxLength based on screen width
+      const maxLength = isSmallScreen ? 70 : 170; // Change maxLength based on screen width
     
   return (
     <div className='book'>

@@ -23,7 +23,7 @@
 }
 
 .book-title{
-    height: 50px;
+    height: fit-content;
     font-size: 20px;
     font-weight: bold;
     margin: 0;
@@ -34,12 +34,12 @@
 }
 
 .book-published{
-    height: 20px;
+    height: fit-content;
     width: 100%;
     display: flex;
     margin-top: 20px;
     color: white;
-    font-size: 15px;
+    font-size: 12px;
     font-weight: 300;
     gap: 7px;
 }
@@ -55,7 +55,7 @@
     text-align: start; /* Adjust the text alignment as needed */
     color: #fff; /* Set the color of the text */
     /* padding: 20px 0px;  */
-    height: 55px;
+    height: fit-content;
 }
 
 .book-links{
@@ -126,10 +126,10 @@
     border-color: gray;
 }
 
-@media screen and (max-width: 650px){
+@media screen and (max-width: 750px){
 
     .book{
-        height: 260px;
+        height: 220px;
     }
    
     .book-content{
@@ -138,25 +138,25 @@
 
     .book-title{
         font-size: 15px;
-        height: 70px;
+        height: fit-content;
         word-spacing: 2px;
-        margin-bottom: 0;
+        margin-bottom: 5px;
     }
 
     .book-published{
         margin-top: 0px;
         font-size: 10px;
-        gap: 4px
+        gap: 4px;
+        margin-bottom: 5px;
     }
 
     .book-description{
         height: 70px;
-        font-size: 15px;
-        margin-top: 20px;
+        font-size: 12px;
     }
 
     .book .book-image{
-        height: 55%;
+        height: 65%;
         align-self: flex-start;
         margin: 15px;
     }
