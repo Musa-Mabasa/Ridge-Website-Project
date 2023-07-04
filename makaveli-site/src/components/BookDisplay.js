@@ -8,7 +8,7 @@ import ReadMore from './ReadMore.js';
 import Popup from './Popup.js';
 
 
-function BookDisplay({title, description, image, amazonLink, takealotlink, smashwordslink, date, author}) {
+function BookDisplay({title, description, image, amazonLink, takealotLink, smashwordsLink, date, author}) {
     const [buttonPopup, setButtonPopup] = useState(false);
     const [isSmallScreen, setIsSmallScreen] = useState(false);
 
@@ -23,7 +23,6 @@ function BookDisplay({title, description, image, amazonLink, takealotlink, smash
       }, []);
     
       const maxLength = isSmallScreen ? 70 : 170; // Change maxLength based on screen width
-    
   return (
     <div className='book'>
         <div className='book-content'>
@@ -52,12 +51,12 @@ function BookDisplay({title, description, image, amazonLink, takealotlink, smash
                         <img src={amazon} alt='amazon'  style={{color: "white"}} />
                     </div>
                 </a>
-                <a href={takealotlink} target="_blank" rel="noopener noreferrer">
+                <a href={takealotLink} target="_blank" rel="noopener noreferrer">
                     <div className='shop-img'  data-tooltip="Shop at takealot">
                         <img src={takealot} alt='takealot' style={{color: "white"}} />
                     </div>
                 </a>
-                <a href={smashwordslink} target="_blank" rel="noopener noreferrer">
+                <a href={smashwordsLink} target="_blank" rel="noopener noreferrer">
                     <div className='shop-img'  data-tooltip="Shop at smashwords">
                         <img src={smashwords} alt='smashwords' style={{color: "white"}} />
                     </div>

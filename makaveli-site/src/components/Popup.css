@@ -10,7 +10,8 @@
     justify-content: center;
     align-items: center;
     animation: fadeIn 0.3s ease-in-out;
-    z-index: 150;
+    overflow-y: scroll;
+    z-index: 4;
 }
 
 @keyframes fadeIn{
@@ -33,10 +34,12 @@
     word-spacing: 2px;
     line-height: 1.4;
     background-color: transparent;
+    margin-top: 100px;
 }
 
 .popup-inner h3{
     background-color: transparent;
+    margin-top: 50px;
 }
 
 #close-popup{
@@ -46,6 +49,7 @@
     top: 20px;
     right: 20px;
     background-color: transparent;
+    margin-top: 90px;
 }
 
 #close-popup svg{

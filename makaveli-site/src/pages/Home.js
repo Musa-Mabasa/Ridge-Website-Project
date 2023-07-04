@@ -1,5 +1,4 @@
 import React from 'react'
-import backgroundvideo from '../assets/background_gifs/homeBackground.mp4'
 import './Home.css'
 import * as Aiicons from 'react-icons/ai'
 import * as Bsicons from 'react-icons/bs'
@@ -16,9 +15,8 @@ class Home extends React.Component {
 
   render(){
     return (
-      <div className='background-video'>
+      <div id='homeWrapper'>
           <div className='overlay'></div>
-          <video src={backgroundvideo} autoPlay loop muted/>
           <nav id="homeNav">
           <div id='home-nav-list'>
             <ul id="home-navbar-nav" className={this.state.clicked? "home-navbar active" : "home-navbar" }>
@@ -57,15 +55,18 @@ export default Home
 
 const socialData = [
   {
-    link: 'https://www.twitter.com/',
+    id: 1,
+    link: 'https://twitter.com/MakavelliRidge',
     icon: <Aiicons.AiOutlineTwitter />
   },
   {
-    link: 'https://www.instagram.com/',
+    id: 2,
+    link: 'https://www.instagram.com/makavelliridge/',
     icon: <Aiicons.AiOutlineInstagram />
   },
   {
-    link: 'https://www.facebook.com/',
+    id: 3,
+    link: 'https://www.facebook.com/profile.php?id=100090989985403',
     icon: <Bsicons.BsFacebook />
   },
 ]

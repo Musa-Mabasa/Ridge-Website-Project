@@ -15,7 +15,7 @@ function Contacts() {
           <div className='contact-text'>
             <p>EMAIL:</p>
           </div>
-            <p className='details-text' style={{'text-decoration':'underline'}}>JOHNDOE@GMAIL.COM</p>
+            <p className='details-text' style={{'text-decoration':'underline'}}>ridgemakavelli@gmail.com</p>
         </div>
         <div className='contact-box'>
           <div className='contact-text'>
@@ -28,12 +28,6 @@ function Contacts() {
                 </a>
               ))}
           </div>
-        </div>
-        <div className='contact-box'>
-          <div className='contact-text'>
-            <p>PHONE:</p>
-          </div>
-            <p className='details-text'>+1 234 567 890</p> 
         </div>
         <div className='contact-box'>
           <div className='contact-text'>
@@ -54,34 +48,41 @@ function Contacts() {
 
 const socialData = [
   {
-    link: 'https://www.twitter.com/',
+    id: 1,
+    link: 'https://twitter.com/MakavelliRidge',
     icon: <Aiicons.AiOutlineTwitter />
   },
   {
-    link: 'https://www.instagram.com/',
+    id: 2,
+    link: 'https://www.instagram.com/makavelliridge/',
     icon: <Aiicons.AiOutlineInstagram />
   },
   {
-    link: 'https://www.facebook.com/',
+    id: 3,
+    link: 'https://www.facebook.com/profile.php?id=100090989985403',
     icon: <Bsicons.BsFacebook />
   },
 ]
 
 const musicData =[
   {
+    id: 1,
     link: 'https://open.spotify.com/artist/3Qdtx3XbuyxpXzxBBOBffq',
     icon: <Bsicons.BsSpotify />
   },
   {
+    id: 2,
     link: 'https://music.apple.com/us/artist/raja-de-spyce/1658646151',
     icon: <Faicons.FaItunesNote />
   },
   {
+    id: 3,
     link: 'https://deezer.page.link/YtBtVVe6SJHXTZXd9',
     icon: <Faicons.FaDeezer />
   },
   {
-    link: 'https://youtube.com/',
+    id: 4,
+    link: 'https://www.youtube.com/@Makavelliridge',
     icon: <Faicons.FaYoutube/>
   }
 ]

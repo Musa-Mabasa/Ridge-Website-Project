@@ -1,5 +1,6 @@
 import './App.css';
 import React, {useState, useEffect, useRef} from 'react';
+import {Helmet} from "react-helmet";
 import Navbar from './components/Navbar';
 
 import Home from './pages/Home';
@@ -17,18 +18,21 @@ function App() {
   const inMusic = pathname === '/music';
 
   const [showNavbar, setShowNavbar] = useState(true);
-  const bookWrapperRef = useRef(null);
+  const wrapperRef = useRef(null);
 
   const handleScroll = () => {
-    const bookWrapper = bookWrapperRef.current;
-    const windowHeight = window.innerHeight;
-    const wrapperHeight = bookWrapper.scrollHeight;
-    const scrollTop = bookWrapper.scrollTop;
-    if (wrapperHeight > windowHeight && scrollTop > 60) {
-      setShowNavbar(false);
-    } else {
-      setShowNavbar(true);
+    if(wrapperRef && wrapperRef.current){
+      const wrapper = wrapperRef.current;
+      const windowHeight = window.innerHeight;
+      const wrapperHeight = wrapper.scrollHeight;
+      const scrollTop = wrapper.scrollTop;
+      if (wrapperHeight > windowHeight && scrollTop > 60) {
+        setShowNavbar(false);
+      } else {
+        setShowNavbar(true);
     }
+    }
+    
   };
 
   useEffect(() => {
@@ -38,15 +42,22 @@ function App() {
     };
   }, []);
 
+
   
   return (
     <>
     <div className="App">
+    <Helmet>
+        <meta charSet="utf-8" />
+        <title>Ridge Makavelli</title>
+        <link rel="canonical" href="http://www.ridgemakavelli.com/music" />
+        <meta name="description" content="Ridge Makavelli" />
+    </Helmet>
     <Navbar className="navbar" hidden = {shouldHide} showNavbar={showNavbar} inBooks = {inBooks} inMusic= {inMusic}/>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/music" element={<Music />} />
-        <Route path="/books" element={<Books handleScroll={handleScroll} bookWrapperRef={bookWrapperRef} />} />
+        <Route path="/music" element={<Music handleScroll={handleScroll} musicWrapperRef={wrapperRef}/>} />
+        <Route path="/books" element={<Books handleScroll={handleScroll} bookWrapperRef={wrapperRef} />} />
         <Route path="/about" element={<About />} />
         <Route path="/contacts" element={<Contacts />} />
       </Routes>

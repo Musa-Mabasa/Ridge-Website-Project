@@ -30,7 +30,7 @@ class Navbar extends Component  {
                 <nav id='nav' className={(inBooks || inMusic) ? this.props.showNavbar ? 'nav-class' : 'hidden-nav' : ''}>
                 <Link id='logo' to='/'>
                     <h3>RIDGE</h3>
-                    <h3>MAKAVELI</h3>
+                    <h3>MAKAVELLI</h3>
                 </Link>
                 <div id='nav-list'>
                     <ul id={hidden? 'homeNav-nav': "navbar-nav"} className={this.state.clicked? "#navbar active" : "#navbar" }>
