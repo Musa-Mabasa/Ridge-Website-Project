@@ -1,6 +1,6 @@
 {
   "name": "makaveli-site",
-  "homepage": "http://www.ridgemakavelli.com/",
+  "homepage": ".",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

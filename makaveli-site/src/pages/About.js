@@ -11,7 +11,7 @@ function About() {
       </div>
       <div id='about-text' >
         <p style={{color: "white"}}>
-          Ridge Makavelli is a Chemical engineer, a musician, an author, and and athlete. 
+          Ridge Makavelli is a Chemical engineer, a musician, an author, and an athlete. 
         </p>
         <br/>
         <p style={{color: "white"}}>
