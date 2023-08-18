@@ -1,2 +1,4 @@
 # Ridge-Website-Project
-hi
+This is Ridge Makavelli's website that showcases his books and music.
+# Website
+http://ridgemakavelli.com/
